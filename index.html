@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>YUMAERA POS</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<div class="app">
+<aside><div class="logo">YUMAERA POS</div><div class="tag">Kasir Modern, Cepat &amp; Praktis</div>
+<nav id="nav"></nav><div class="me" id="me"></div></aside>
+<main id="main"></main></div>
+<div id="login"><div class="l"><b>YUMAERA POS</b><h1>Kasir Modern, Cepat &amp; Praktis</h1><div>✓ Kasir cepat &nbsp; ✓ Laporan lengkap &nbsp; ✓ Kelola toko dengan mudah</div></div>
+<div class="r"><div class="f" onkeydown="if(event.key=='Enter')doLogin()"><h2 style="margin:0">Masuk ke Yumaera Store</h2>
+<input id="le" type="email" placeholder="Email" autocomplete="username"><input id="lp" type="password" placeholder="Password" autocomplete="current-password">
+<label><input type="checkbox" style="width:auto" onchange="$('lp').type=this.checked?'text':'password'"> Tampilkan password</label><div id="lerr"></div>
+<button class="btn pri" onclick="doLogin()">Masuk</button></div></div></div>
+<div class="modal" id="modal"><div class="box" id="box"></div></div>
+<div id="printarea"></div>
+<script src="app.js"></script></body></html>
